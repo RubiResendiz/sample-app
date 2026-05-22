@@ -6,14 +6,14 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: dev-app
+      app: development-app
   template:
     metadata:
       labels:
-        app: dev-app
+        app: development-app
     spec:
       containers:
-      - name: dev-container
-        image: image: europe-west4-docker.pkg.dev/qwiklabs-gcp-01-81281a2390d2/my-repository/sample-app:v2.0
+      - name: development-container
+        image: europe-west4-docker.pkg.dev/qwiklabs-gcp-00-e3f8c2d9663c/my-repository/sample-app:v2.0
         ports:
         - containerPort: 8080
